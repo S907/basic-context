@@ -11,8 +11,12 @@ function App() {
   console.log(context, '++++++++', i++);
 
   let emptyArr=[];
-  context.state1.push(count);
+  
   // console.log('+++count+++', emptyArr.length);
+  const handleClick=()=>{
+    setCount((count) => count + 1)
+    context.state1.push(count);
+  };
   return (
     <>
       <div>
@@ -25,7 +29,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button onClick={handleClick}>
           count is {count}
         </button>
         <p>
