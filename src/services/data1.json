@@ -1,0 +1,41 @@
+{
+    "data":[
+        {
+            "id":1,
+            "product":"Kelvin",
+            "variant":[
+                {
+                    "id":18,
+                    "product_id":122,
+                    "price":"Rs300",
+                    "product_name":"Kelvinator"
+                }
+            ]
+        },
+        {
+            "id":2,
+            "product":"Kelvin",
+            "variant":[
+                {
+                    "id":17,
+                    "product_id":112,
+                    "price":"Rs300",
+                    "product_name":"Kelvinator"
+                }
+            ]
+        },
+        {
+            "id":3,
+            "product":"Kelvin",
+            "variant":[
+                {
+                    "id":20,
+                    "product_id":124,
+                    "price":"Rs300",
+                    "product_name":"Kelvinator"
+                }
+            ]
+        }
+        
+    ]
+}

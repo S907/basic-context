@@ -1,44 +1,63 @@
-import { useContext, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import AppContext from './components/context/AppContext'
-let i=0
-function App() {
-  const [count, setCount] = useState(0)
-  // console.log("++++count+++", count);
-  const context = useContext(AppContext);
-  console.log(context, '++++++++', i++);
+import { useContext, useEffect, useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
+import Header from './components/Header';
+import SingleProduct from './components/product/SingleProduct';
 
-  let emptyArr=[];
-  
-  // console.log('+++count+++', emptyArr.length);
-  const handleClick=()=>{
-    setCount((count) => count + 1)
-    context.state1.push(count);
-  };
+function App() {
+  const [isLoading, setLoading] = useState(false);
+  const [data, setData] = useState([]);
+  const [productId, setProId] = useState([]);
+  const [getId, setId] = useState([]);
+  useEffect(() => {
+    setLoading(true);
+    fetch('http://localhost:3001/data').then((res) => {
+      // console.log(res);
+      const data = res.json();
+      return data;
+    }).then(data => {
+      console.log(data);
+      setData(data);
+      setLoading(false);
+    }).catch(err => {
+      console.log(err);
+      setLoading(false);
+    });
+  }, [])
+
+  const handleClick = () => {
+    const variantId = [];
+    const productId = [];
+
+    // console.log('data+++', data);
+    if (data) {
+      for (let i = 0; i < data.length; i++) {
+        const variantArray = data[i].variant;
+        // console.log('+++var+++', variantArray);
+        for (let j = 0; j < variantArray.length; j++) {
+          variantId.push(variantArray[j].id);
+          productId.push(variantArray[j].product_id);
+        }
+      }
+    }
+    // console.log('+++Variant+++',variantId, productId);
+
+    setProId(productId);
+    setId(variantId);
+  }
+
+  console.log(productId, getId);
+
   return (
     <>
+      <Header />
+      {/* <SingleProduct /> */}
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <p>{JSON.stringify(productId)}</p>
+        <p>{JSON.stringify(getId)}</p>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={handleClick}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <button onClick={handleClick}>Get Data</button>
     </>
   )
 }

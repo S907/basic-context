@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
@@ -6,9 +6,11 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Details from './components/Details.jsx';
+// import Header from './components/Header.jsx';
 import GlobalState from './components/context/GlobalState.jsx';
-
+import Cart from './components/product/Cart.jsx'
+import MainCont from './components/MainCont.jsx';
+// import SingleProduct from './components/product/SingleProduct.jsx'
 
 const router = createBrowserRouter([
   {
@@ -16,16 +18,21 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path:"/details",
-    element:<Details />
-  }
+    path: "/cart",
+    element: <Cart />
+  },
+  {
+    path: "/main",
+    element: <MainCont />
+  },
+  
 ]);
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <GlobalState>
-<RouterProvider router={router} /> 
-</GlobalState> 
-</React.StrictMode>,
+      <RouterProvider router={router} />
+    </GlobalState>
+  </React.StrictMode>,
 )

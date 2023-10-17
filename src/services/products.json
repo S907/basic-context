@@ -1,0 +1,123 @@
+{
+    "data": [
+      {
+        "id": "48",
+        "name": "Snacks",
+        "subtitle": "Snacks",
+        "image": "https://ehostingguru.com/stage/stageKartTest/upload/images/0980-2020-11-12.jpg",
+        "status": null
+      },
+      {
+        "id": "49",
+        "name": "Roll",
+        "subtitle": "Roll",
+        "image": "https://ehostingguru.com/stage/stageKartTest/upload/images/3521-2020-11-12.jpg",
+        "status": null
+      },
+      {
+        "id": "50",
+        "name": "Noodles",
+        "subtitle": "Noodles",
+        "image": "https://ehostingguru.com/stage/stageKartTest/upload/images/5164-2020-11-12.jpg",
+        "status": null
+      },
+      {
+        "id": "51",
+        "name": "Paratha",
+        "subtitle": "Paratha",
+        "image": "https://ehostingguru.com/stage/stageKartTest/upload/images/8852-2020-11-12.jpg",
+        "status": null
+      },
+      {
+        "id": "52",
+        "name": "Raita",
+        "subtitle": "Raita",
+        "image": "https://ehostingguru.com/stage/stageKartTest/upload/images/4224-2020-11-12.jpg",
+        "status": null
+      },
+      {
+        "id": "53",
+        "name": "Salad",
+        "subtitle": "Salad",
+        "image": "https://ehostingguru.com/stage/stageKartTest/upload/images/4850-2020-11-12.jpg",
+        "status": null
+      },
+      {
+        "id": "54",
+        "name": "Rice",
+        "subtitle": "Rice",
+        "image": "https://ehostingguru.com/stage/stageKartTest/upload/images/4588-2020-11-12.jpg",
+        "status": null
+      },
+      {
+        "id": "55",
+        "name": "Drinks",
+        "subtitle": "Drinks",
+        "image": "https://ehostingguru.com/stage/stageKartTest/upload/images/5499-2020-11-12.jpg",
+        "status": null
+      },
+      {
+        "id": "56",
+        "name": "Biryani",
+        "subtitle": "Biryani",
+        "image": "https://ehostingguru.com/stage/stageKartTest/upload/images/0242-2020-11-12.jpg",
+        "status": null
+      },
+      {
+        "id": "57",
+        "name": "Indian",
+        "subtitle": "Indian",
+        "image": "https://ehostingguru.com/stage/stageKartTest/upload/images/6880-2020-11-12.jpg",
+        "status": null
+      },
+      {
+        "id": "58",
+        "name": "Chinese",
+        "subtitle": "Chinese",
+        "image": "https://ehostingguru.com/stage/stageKartTest/upload/images/0920-2020-11-12.jpg",
+        "status": null
+      },
+      {
+        "id": "59",
+        "name": "Beverage",
+        "subtitle": "Beverage",
+        "image": "https://ehostingguru.com/stage/stageKartTest/upload/images/6958-2020-11-12.jpg",
+        "status": null
+      },
+      {
+        "id": "60",
+        "name": "Chinese Combo",
+        "subtitle": "Chinese Combo",
+        "image": "https://ehostingguru.com/stage/stageKartTest/upload/images/6514-2020-11-21.JPG",
+        "status": null
+      },
+      {
+        "id": "61",
+        "name": "Birthday Cake",
+        "subtitle": "Birthday Cake",
+        "image": "https://ehostingguru.com/stage/stageKartTest/upload/images/7436-2020-11-21.jpg",
+        "status": null
+      },
+      {
+        "id": "62",
+        "name": "Soup",
+        "subtitle": "Soup",
+        "image": "https://ehostingguru.com/stage/stageKartTest/upload/images/2181-2021-02-05.jpg",
+        "status": null
+      },
+      {
+        "id": "63",
+        "name": "Momo",
+        "subtitle": "Momo",
+        "image": "https://ehostingguru.com/stage/stageKartTest/upload/images/2220-2021-06-14.jpeg",
+        "status": null
+      },
+      {
+        "id": "64",
+        "name": "Pizza",
+        "subtitle": "Pizza",
+        "image": "https://ehostingguru.com/stage/stageKartTest/upload/images/6755-2021-12-31.jpeg",
+        "status": null
+      }
+    ]
+  }
