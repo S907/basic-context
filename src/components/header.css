@@ -6,13 +6,15 @@ nav{
     background-color: aqua; 
     color: black;
     font-weight: 700;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+
 }
 ul li {
     list-style: none;
 }
 .ul-head{
+    /* border:1px solid red; */
     flex:1;
     display:flex;
     gap: 30px;
